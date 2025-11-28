@@ -1,0 +1,1765 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'Madefor', Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif;
+}
+
+
+/* --------------------Page one--------------- */
+/* -----Navbar---- */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.vidback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.vidback video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2% 8%;
+    z-index: 10;
+
+}
+
+
+/* --Logo-- */
+.logo {
+    font-family: var(--ff-primary);
+    font-size: 20px;
+    letter-spacing: 7px;
+    font-weight: 400;
+}
+
+
+/* --Navbar items-- */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background: black;
+    border-radius: 5px;
+
+}
+
+
+.navbaritems {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    justify-content: center;
+}
+
+.navbaritems .containers {
+    font-family: var(--ff-primary);
+    color: black;
+    font-size: 16px;
+
+
+}
+
+/* --Navbaar button-- */
+
+.navbar button {
+    font-family: var(--ff-primary);
+    color: white;
+    font-size: 16px;
+    background-color: black;
+    margin: 0;
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+
+.navbar button:hover {
+    background-color: white;
+    color: black;
+}
+
+.slogo {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    letter-spacing: 5.12px;
+}
+
+.slogo h4 {
+    font-family: var(--ff-primary);
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.slogo p {
+    font-size: 24px;
+    font-family: var(--ff-primary);
+}
+
+/* --------------------Page two----------------- */
+/*----- Vision Page -----*/
+
+.vision-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 120px 8%;
+}
+
+/* --Vision Left side-- */
+.vision-left {
+
+    display: flex;
+    color: white;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* vertical line */
+.v-line {
+    position: relative;
+    width: 2px;
+    height: 460px;
+    background-color: #858585;
+}
+
+.v-line::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 140px;
+    top: 50px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.visiontitle {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.visionheading {
+    font-size: 24px;
+    font-family: var(--ff-primary);
+    line-height: 2;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 70px;
+
+}
+
+.visiondescription {
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    line-height: 1.8;
+    padding-right: 30%;
+}
+
+
+/* --Vision Right side img-- */
+.vision-right {
+    width: 650px;
+    object-fit: contain;
+}
+
+.h-line {
+    display: none;
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+/* -----------------Page three----------------- */
+/* -----Service page---- */
+.servicesection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 120px 8% 0px 8%;
+}
+
+.service-top {
+    display: flex;
+    gap: 40px;
+    padding-right: 60%;
+}
+
+.service-line {
+    position: relative;
+    width: 2px;
+    height: 230px;
+    background-color: #858585;
+}
+
+.service-line::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 130px;
+    top: 100px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.servicetitle {
+    font-size: 14px;
+    font-family: var(--ff-primary);
+    margin-top: 30px;
+    margin-bottom: 45px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.serviceheading {
+    font-size: 24px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 2;
+
+}
+
+
+/* ------------------Page Four------------------- */
+/* --Autonomous page---- */
+
+.autonomous-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 40px 11%;
+
+}
+
+.autonomous-left {
+    display: flex;
+    padding-left: 1%;
+
+}
+
+.autonomous-driving {
+    font-size: 40px;
+    font-family: var(--ff-primary);
+    font-weight: 200;
+    letter-spacing: 4px;
+    line-height: 1.6;
+    padding-bottom: 30px;
+}
+
+.autonomous-description {
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    line-height: 1.8;
+    padding-right: 380px;
+    padding-bottom: 30px;
+}
+
+.autonomous-right {
+    padding-right: 0px;
+}
+
+.autonomous-right img {
+    width: 500px;
+    height: 500px;
+
+}
+
+.autonomous-section .readmore {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    border-radius: 8px;
+    gap: 10px;
+    padding: 0px 8px;
+    cursor: pointer;
+    width: fit-content;
+
+}
+
+.autonomous-section .readmore span {
+    height: 40px;
+    width: 1px;
+    background: black;
+}
+
+.autonomous-section .readmore i {
+    font-size: 20px;
+}
+
+.autonomous-section .readmore:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* -----------------Page Five----------------- */
+/* --Realtime page---- */
+
+.realtime-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px 11% 100px 0px;
+    gap: 250px;
+
+}
+
+.realtime-right {
+    display: flex;
+
+
+}
+
+.realtime-information {
+    font-size: 40px;
+    font-family: var(--ff-primary);
+    font-weight: 200;
+    letter-spacing: 4px;
+    line-height: 1.6;
+    padding-bottom: 30px;
+}
+
+.realtime-description {
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    line-height: 1.8;
+    padding-bottom: 30px;
+    padding-right: 23%;
+}
+
+
+.realtime-left img {
+    width: 550px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.realtime-section .readmore {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    border-radius: 8px;
+    gap: 10px;
+    padding: 0px 8px;
+    cursor: pointer;
+    width: fit-content;
+
+}
+
+.realtime-section .readmore span {
+    height: 40px;
+    width: 1px;
+    background: black;
+}
+
+.realtime-section .readmore i {
+    font-size: 20px;
+}
+
+.realtime-section .readmore:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* ------------------Page six------------------- */
+/* --Perception page---- */
+
+.perception-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 40px 11%;
+
+}
+
+.perception-left {
+    display: flex;
+    padding-left: 1%;
+
+}
+
+.perception-driving {
+    font-size: 40px;
+    font-family: var(--ff-primary);
+    font-weight: 200;
+    letter-spacing: 4px;
+    line-height: 1.6;
+    padding-bottom: 30px;
+}
+
+.perception-description {
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    line-height: 1.8;
+    padding-right: 380px;
+    padding-bottom: 30px;
+}
+
+.perception-right {
+    padding-right: 0px;
+}
+
+.perception-right img {
+    width: 500px;
+    height: 500px;
+
+}
+
+.perception-section .readmore {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    border-radius: 8px;
+    gap: 10px;
+    padding: 0px 8px;
+    cursor: pointer;
+    width: fit-content;
+
+}
+
+.perception-section .readmore span {
+    height: 40px;
+    width: 1px;
+    background: black;
+}
+
+.perception-section .readmore i {
+    font-size: 20px;
+}
+
+.perception-section .readmore:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* ------------------Page seven------------------- */
+/* ----why autono page---- */
+
+/* ----Background---- */
+.whyautono-section {
+    background-image: url('whyautonobackground.avif');
+    height: 140vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.whyautono-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 55% 200px 8%;
+
+}
+
+.whyautono-left {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    background-color: black;
+    padding: 70px 20% 70px 7%;
+    border-radius: 4%;
+}
+
+.v-linewhyautono {
+    width: 2px;
+    background-color: white;
+    height: 520px;
+    position: relative;
+}
+
+.v-linewhyautono::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 140px;
+    background-color: white;
+    top: 50px;
+    left: 100%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+.whyautono-title {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.whyautono-heading {
+    color: white;
+    font-size: 24px;
+    font-family: var(--ff-primary);
+    line-height: 2;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 70px;
+}
+
+.whyautono-description {
+    color: white;
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    line-height: 1.8;
+    padding-bottom: 50px;
+}
+
+
+.whyautono-section .readmore {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: black;
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    border-radius: 8px;
+    gap: 10px;
+    padding: 0px 8px;
+    cursor: pointer;
+    width: fit-content;
+    color: white;
+
+}
+
+.whyautono-section .readmore span {
+    height: 40px;
+    width: 1px;
+    background: white;
+}
+
+.whyautono-section .readmore i {
+    font-size: 20px;
+}
+
+.whyautono-section .readmore:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ------------------Page Eight------------------- */
+/* ----Autono In Number page---- */
+
+
+.eight-section {
+    display: flex;
+    gap: 120px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.eight-containers {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 100px;
+    column-gap: 100px;
+
+}
+
+.eight-title {
+    font-size: 24px;
+    font-family: var(--ff-primary);
+    font-weight: 200;
+    letter-spacing: 4px;
+    margin-top: 70px;
+    padding-bottom: 80px;
+}
+
+.number {
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-family: var(--ff-primary);
+}
+
+.emp-h-line {
+    width: 185px;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.emp-h-line::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 25px;
+    top: -2px;
+    height: 3px;
+}
+
+.detail {
+    font-size: 14px;
+    font-family: var(--ff-primary);
+    letter-spacing: 4px;
+}
+
+.eight-left img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* --------------------Page Nine----------------- */
+/*----- Industry Page -----*/
+
+.industry-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 120px 8%;
+    gap: 90px;
+}
+
+/* --industry Left side-- */
+.industry-left {
+    display: flex;
+    color: white;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* industry line */
+.industry-v-line {
+    position: relative;
+    width: 2px;
+    height: 440px;
+    background-color: #858585;
+}
+
+.industry-v-line::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 90px;
+    top: 50px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.industry-title {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.industry-heading {
+    font-size: 24px;
+    font-family: var(--ff-primary);
+    line-height: 2;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 70px;
+
+}
+
+.industry-description {
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    line-height: 1.8;
+    padding-right: 33%;
+}
+
+/* ---Industry right side--- */
+
+.industry-right {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.industry-containers {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 110px;
+}
+
+.industry-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.industry-right-heading {
+    color: white;
+    font-size: 14px;
+    font-family: var(--ff-primary);
+    letter-spacing: 4px;
+    margin-top: 15px;
+}
+
+.industry-img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* --------------------Page Ten----------------- */
+/*----- Careers Page -----*/
+
+.careers-section {
+    display: flex;
+    background-color: black;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 120px 8%;
+    gap: 120px;
+}
+
+/* ----Left side---- */
+.careers-left {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.careers-v-line {
+    width: 1px;
+    height: 340px;
+    background-color: white;
+    position: relative;
+}
+
+.careers-v-line::after {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 3px;
+    height: 170px;
+    top: 50px;
+    left: 100%;
+    border-radius: 20px;
+
+}
+
+.careers-points {
+    color: white;
+    font-family: var(--ff-primary);
+}
+
+.careers-points h6 {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.careers-points h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-bottom: 70px;
+    line-height: 1.8;
+}
+
+.openings {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    border-radius: 8px;
+    gap: 10px;
+    width: fit-content;
+    padding: 0px 8px;
+    cursor: pointer;
+}
+
+.openings span {
+    height: 40px;
+    width: 1px;
+    background: white;
+}
+
+.openings i {
+    font-size: 20px;
+}
+
+.openings:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+/* ----Right side---- */
+
+.careers-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sample-careers-points {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    color: white;
+    font-family: var(--ff-primary);
+    padding: 60px 40px 60px 40px;
+    width: 400px;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.sample-careers-points h6 {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.sample-careers-points .place {
+    font-size: 14px;
+    font-weight: 50;
+    margin-bottom: 10px;
+}
+
+.sample-careers-points p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.applynow {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    padding: 0px 8px;
+    border-radius: 8px;
+    width: fit-content;
+    gap: 10px;
+}
+
+.applynow span {
+    height: 40px;
+    width: 1px;
+    background: white;
+}
+
+.applynow:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* --------------------Page Eleven----------------- */
+
+
+/*----- Contact Page -----*/
+
+/* --Left side-- */
+
+.contact-section {
+    display: flex;
+    padding: 120px 8%;
+    gap: 70px;
+    flex-direction: column;
+}
+
+.website-title {
+    font-family: var(--ff-primary);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    align-items: flex-start;
+}
+
+.website-topics {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    letter-spacing: 2px;
+}
+
+.contact-types {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    letter-spacing: 2px;
+}
+
+.contact-section .address {
+    line-height: 1.8;
+}
+
+.contact-left {
+    display: flex;
+    gap: 250px;
+}
+
+/* --Right side-- */
+
+.contact-right-points {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: var(--ff-primary);
+}
+
+.emailenter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subscribe-title {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.signup {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+.email {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+.subscribe-button {
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: white;
+    background: black;
+    padding: 12px 12px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-weight: 50;
+}
+
+.subscribe-button:hover {
+    background: white;
+    color: black;
+}
+
+.email-text-box {
+    padding: 12px 24px 12px 24px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.email-example {
+    font-family: var(--ff-secondary);
+    font-size: 14px;
+}
+
+.notifyaccept {
+    font-size: 16px;
+    letter-spacing: 1..5px;
+}
+
+.checkboxalert {
+    font-family: var(--ff-secondary);
+    font-size: 14px;
+}
+
+.email-input-box {
+    display: flex;
+    gap: 8px;
+}
+
+.message {
+    line-height: 1.8;
+}
+
+.poweredby {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 10%;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-family: var(--ff-primary);
+}
+
+.poweredby a {
+    text-decoration: underline;
+}
+
+/* ----------------------------------------Media Queries-------------------------------------------- */
+
+@media (max-width:740px) {
+
+
+    /* ----------------------page one--------------------- */
+    /* Background video */
+    .hero {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+
+
+    }
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        padding: 5% 8%;
+        background-color: white;
+    }
+
+    .navbaritems {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+
+    }
+
+    .logo {
+        font-size: 14px;
+        letter-spacing: 0.1;
+        font-weight: 700;
+    }
+
+    .navbar button {
+        font-size: 12px;
+
+    }
+
+
+
+    .slogo h4 {
+
+        font-size: 26px;
+        font-weight: 400;
+        word-break: break-word;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.6;
+    }
+
+    .slogo p {
+        font-size: 14px;
+        word-break: break-word;
+        letter-spacing: 1px;
+        padding-top: 18px;
+        line-height: 1.6;
+
+    }
+
+    /* -----------------------page two------------------- */
+
+
+    .vision-section {
+        padding: 80px 20px;
+        display: block;
+    }
+
+    .vision-section>div {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    /* Vertical line */
+    .v-line {
+        width: 2px;
+        height: 330px;
+    }
+
+    .v-line::after {
+        left: 50%;
+        width: 4px;
+        height: 100px;
+        top: 50px;
+
+    }
+
+    /* vision contents */
+    .visiontitle {
+        font-size: 11px;
+    }
+
+    .visionheading {
+        font-size: 18px;
+        font-weight: 200;
+        margin-bottom: 30px;
+    }
+
+    .visiondescription {
+        font-size: 12px;
+        letter-spacing: 1.5;
+        padding-right: 25px;
+        padding-bottom: 0px;
+    }
+
+    .h-line {
+        display: none;
+
+    }
+
+    .vision-right img {
+        width: 100%;
+        height: 250px;
+        object-position: center;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* -----------------------page three---------------------- */
+
+    .service-top {
+        padding-right: 0%;
+        margin-top: 0;
+    }
+
+    .servicetitle {
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .serviceheading {
+        font-size: 18px;
+        font-weight: 300;
+
+    }
+
+
+    .service-line {
+        width: 2px;
+        height: 140px;
+    }
+
+    .service-line::after {
+        width: 3px;
+        height: 100px;
+        top: 40px;
+    }
+
+    /* --------------------------Page four----------------- */
+
+
+    .autonomous-section {
+        display: flex;
+        justify-content: center;
+        padding: 70px 70px;
+        flex-direction: column;
+
+    }
+
+    .autonomous-left {
+        display: flex;
+
+    }
+
+
+    .autonomous-driving {
+
+        font-size: 21px;
+        line-height: 1.6;
+        padding-bottom: 30px;
+    }
+
+    .autonomous-description {
+        font-size: 12px;
+        line-height: 1.8;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .autonomous-right {
+        object-fit: center;
+    }
+
+    .autonomous-section .readmore {
+        font-size: 12px;
+        gap: 6px;
+        padding: 0px 6px;
+
+    }
+
+    .autonomous-section .readmore span {
+        height: 30px;
+        width: 1px;
+        background: black;
+    }
+
+    .autonomous-section .readmore i {
+        font-size: 20px;
+    }
+
+    .autonomous-right img {
+        width: 320px;
+        height: auto;
+    }
+
+    /* --------------------------Page five---------------------- */
+
+
+    .realtime-section {
+        display: flex;
+        justify-content: center;
+        padding: 0px 70px;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .realtime-rigth {
+        display: flex;
+
+    }
+
+
+    .realtime-information {
+
+        font-size: 21px;
+        line-height: 1.6;
+        padding-bottom: 30px;
+    }
+
+    .realtime-description {
+        font-size: 12px;
+        line-height: 1.8;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .realtime-left {
+        object-fit: center;
+    }
+
+    .realtime-section .readmore {
+        font-size: 12px;
+        gap: 6px;
+        padding: 0px 6px;
+
+    }
+
+    .realtime-section .readmore span {
+        height: 30px;
+        width: 1px;
+        background: black;
+    }
+
+    .realtime-section .readmore i {
+        font-size: 20px;
+    }
+
+    .realtime-left img {
+        width: 320px;
+        height: auto;
+    }
+
+    /* --------------------------Page six----------------- */
+
+
+    .perception-section {
+        display: flex;
+        justify-content: center;
+        padding: 30px 70px;
+        flex-direction: column;
+
+    }
+
+    .perception-left {
+        display: flex;
+
+    }
+
+
+    .perception-driving {
+
+        font-size: 21px;
+        line-height: 1.6;
+        padding-bottom: 30px;
+    }
+
+    .perception-description {
+        font-size: 12px;
+        line-height: 1.8;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .perception-right {
+        object-fit: center;
+    }
+
+    .perception-section .readmore {
+        font-size: 12px;
+        gap: 6px;
+        padding: 0px 6px;
+
+    }
+
+    .perception-section .readmore span {
+        height: 30px;
+        width: 1px;
+        background: black;
+    }
+
+    .perception-section .readmore i {
+        font-size: 20px;
+    }
+
+    .perception-right img {
+        padding-top: 10px;
+        width: 320px;
+        height: auto;
+    }
+
+    /* ---------------Page seven-------------- */
+
+    .whyautono-section {
+        padding: 10px 20px;
+        display: block;
+    }
+
+    .whyautono-section>div {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    .whyautono-left {
+        gap: 30px;
+        padding: 40px 17% 50px 7%;
+        border-radius: 4%;
+    }
+
+    /* Vertical line */
+    .v-linewhyautono {
+        width: 2px;
+        height: 450px;
+    }
+
+    .v-linewhyautono::after {
+        left: 50%;
+        width: 4px;
+        height: 100px;
+        top: 50px;
+
+    }
+
+
+
+    .whyautono-title {
+        font-size: 11px;
+        margin-bottom: 30px;
+    }
+
+    .whyautono-heading {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .whyautono-description {
+        font-size: 12px;
+        padding-bottom: 30px;
+    }
+
+    .whyautono-section {
+        height: auto;
+    }
+
+    /* ---------------Page eight-------------- */
+    .eight-section {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eight-containers {
+        row-gap: 70px;
+        column-gap: 80px;
+
+    }
+
+    .eight-title {
+        font-size: 18px;
+        padding-bottom: 50px;
+    }
+
+
+    .number {
+        font-size: 27px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+
+    .emp-h-line {
+        width: 100px;
+        height: 1px;
+        margin-bottom: 15px;
+
+    }
+
+    .emp-h-line::after {
+        width: 15px;
+    }
+
+    .detail {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .eight-left img {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* ---------------Page Nine-------------- */
+
+    .industry-section {
+        flex-direction: column;
+        padding: 70px 8%;
+        gap: 70px;
+    }
+
+    /* --industry Left side-- */
+    .industry-left {
+        gap: 25px;
+        padding-right: 45px;
+    }
+
+    /* industry line */
+    .industry-v-line {
+        height: 340px;
+    }
+
+    .industry-v-line::after {
+        height: 60px;
+        top: 40px;
+
+    }
+
+    .industry-title {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+
+    .industry-heading {
+        font-size: 18px;
+        margin-bottom: 40px;
+
+    }
+
+    .industry-description {
+        font-size: 12px;
+        padding-right: 10%;
+    }
+
+    .industry-containers {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        justify-content: center;
+        align-items: center;
+        column-gap: 00px;
+        row-gap: 70px;
+    }
+
+    .industry-item {
+        gap: 10px;
+    }
+
+    .industry-right-heading {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+    .industry-img {
+        width: 80px;
+        height: 80px;
+        object-fit: none;
+    }
+
+    .lastline-ninepg {
+        height: 1px;
+    }
+
+    /* ---------------Page Ten-------------- */
+    /* ----Left side---- */
+
+    .careers-section {
+        flex-direction: column;
+        padding: 120px 8%;
+        gap: 120px;
+    }
+
+    .careers-v-line {
+        width: 1px;
+        height: 295px;
+    }
+
+    .careers-v-line::after {
+        height: 155px;
+    }
+
+    .careers-points h6 {
+        font-size: 11px;
+        margin-bottom: 30px;
+    }
+
+    .careers-points h2 {
+        font-size: 18px;
+        margin-bottom: 50px;
+        line-height: 1.8;
+    }
+
+    .openings {
+        font-size: 12px;
+        gap: 10px;
+        width: fit-content;
+        padding: 0px 8px;
+    }
+
+    .openings span {
+        height: 30px;
+        width: 1px;
+        background: white;
+    }
+
+    .openings i {
+        font-size: 15px;
+    }
+
+    .sample-careers-points {
+        width: 300px;
+        padding: 30px 20px 30px 20px;
+    }
+
+    .sample-careers-points h6 {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .sample-careers-points .place {
+        font-size: 11px;
+        font-weight: 50;
+        margin-bottom: 10px;
+    }
+
+    .sample-careers-points p {
+        font-size: 12px;
+        line-height: 1.8;
+        padding-right: 40px;
+        padding-left: 30px;
+    }
+
+
+    /* --------------------Page Eleven----------------- */
+
+
+    /*----- Contact Page -----*/
+
+    /* --Left side-- */
+
+    .contact-section {
+        padding: 70px 8% 40px 8%;
+        gap: 70px;
+    }
+
+    .website-title {
+        font-size: 14px;
+    }
+
+    .contact-details {
+        gap: 20px;
+
+    }
+
+    .website-topics {
+        gap: 25px;
+        font-size: 12px;
+        letter-spacing: 1.5;
+    }
+
+    .contact-types {
+        gap: 25px;
+        font-size: 12px;
+        letter-spacing: 1.5;
+    }
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+
+
+    /* --Right side-- */
+
+    .contact-right-points {
+        gap: 25px;
+    }
+
+    .emailenter {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscribe-title {
+        font-size: 14px;
+    }
+
+    .signup {
+        font-size: 12px;
+        padding-right: 100px;
+    }
+
+    .email {
+        font-size: 12px;
+    }
+
+
+    .email-input-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .subscribe-button {
+        font-size: 17px;
+        letter-spacing: 2px;
+        padding: 12px 12px;
+
+    }
+
+    .email-text-box {
+        padding: 12px 20px 12px 20px;
+    }
+
+
+    .email-example {
+        display: none;
+    }
+
+    .notifyaccept {
+        font-size: 16px;
+    }
+
+    .checkboxalert {
+        font-size: 14px;
+        display: none;
+    }
+
+
+    /* --------------------Footer----------------- */
+
+    .poweredby {
+        padding: 0px 8% 20px 10%;
+        font-size: 12px;
+    }
+
+}
